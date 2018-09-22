@@ -1,0 +1,13 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: HYSTRIX-DASHBOARD
+
+logging:
+  config: classpath:logback.xml
+
+
+
+

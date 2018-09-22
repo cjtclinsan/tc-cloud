@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ADMIN-SERVER
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.didispace.com/eureka/
+
+logging:
+  config: classpath:logback.xml
+
+
+
+
+

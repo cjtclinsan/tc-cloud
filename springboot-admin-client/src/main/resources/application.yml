@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ADMIN-CLIENT
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.didispace.com/eureka/
+
+logging:
+  config: classpath:logback.xml
+
+
+
+
+

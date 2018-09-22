@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    addresses:
+    port: 5672
+    username: guest
+    password: guest
+
+logging:
+  config: classpath:logback.xml
+
+
+

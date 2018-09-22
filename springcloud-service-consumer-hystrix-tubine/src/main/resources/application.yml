@@ -1,0 +1,27 @@
+server:
+  port: 6666
+management:
+  port: 6667
+
+spring:
+  application:
+    name: HYSTRIX-TUBINE
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.didispace.com/eureka/
+
+turbine:
+  app-config:  CONSUMER-SERVICE,CONSUMER-HYSTRIX-SERVICE
+  cluster-name-expression: "'default'"
+  combine-host-port: true
+
+logging:
+  config: classpath:logback.xml
+
+
+
+
+
+

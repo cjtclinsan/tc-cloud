@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: PROVIDER-SERVICE
+  http:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka/
+
+
+logging:
+  config: classpath:logback.xml
+
+

@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  data.mongodb:
+    host: localhost
+    port: 27017
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800
+  tokenHead: "Bearer "
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+      register: auth/register
+
+logging:
+  config: classpath:logback.xml
+
+
+

@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>pig-cloud</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>pig-cloud</name>
+  <url>http://maven.apache.org</url>
+
+  <!-- 引入spring boot的依赖 -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.3.RELEASE</version>
+  </parent>
+  <modules>
+    <module>springboot-mybatis-plus</module>
+	<module>springboot-session</module>
+    <module>springboot-rabbitmq</module>
+    <module>springboot-admin-server</module>
+    <module>springboot-admin-client</module>
+	<module>springboot-redis-rate-limiter</module>
+    <module>springboot-security</module>
+    <module>springboot-security-jwt</module>
+    <module>springcloud-zuul-jwt</module>
+    <module>springcloud-eureka-server</module>
+    <module>springcloud-security-oauth-server</module>
+    <module>springcloud-security-oauth-gateway</module>
+    <module>springcloud-security-oauth-resource</module>
+    <module>springcloud-service-consumer</module>
+    <module>springcloud-service-provider</module>
+    <module>springcloud-service-consumer-ribbon</module>
+    <module>springcloud-service-consumer-feign</module>
+    <module>springcloud-config-server</module>
+    <module>springcloud-config-client</module>
+    <module>springcloud-config-serverxx</module>
+    <module>springcloud-config-clientxx</module>
+    <module>springcloud-service-consumer-ribbon-hystrix</module>
+    <module>springcloud-service-consumer-hystrix-dashboard</module>
+    <module>springcloud-service-consumer-hystrix-tubine</module>
+    <module>springcloud-zuul-gateway</module>
+  </modules>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+    <mybatisplus-spring-boot-starter.version>1.0.4</mybatisplus-spring-boot-starter.version>
+    <mybatisplus.version>2.1.0</mybatisplus.version>
+  </properties>
+
+  <dependencies>
+  </dependencies>
+</project>

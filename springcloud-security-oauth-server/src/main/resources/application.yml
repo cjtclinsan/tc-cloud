@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: auth-server
+
+server:
+  port: 7777
+  context-path: /uaa
+security:
+  sessions: stateless
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka.didispace.com/eureka/
+
+logging:
+  config: classpath:logback.xml
+
+
+

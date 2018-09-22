@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: CONSUMER-SERVICE
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.didispace.com/eureka/
+
+logging:
+  config: classpath:logback.xml
+
+
+
+

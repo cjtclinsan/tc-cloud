@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        service-id: config-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.didispace.com/eureka/
+
+logging:
+  config: classpath:logback.xml
+
+

@@ -1,0 +1,21 @@
+server:
+  port: 8888
+  context-path: /demo
+
+spring:
+  application:
+    name: resource-server
+
+eureka:
+ client:
+   serviceUrl:
+     defaultZone: http://eureka.didispace.com/eureka/
+
+security:
+  sessions: stateless
+  oauth2:
+    resource:
+      loadBalanced: true #设置这个才可以使用eureka的服务名，配合loadBalancerInterceptor bean。
+      user-info-uri: http://gateway-server/uaa/user
+      prefer-token-info: false
+      service-id: resource-server
